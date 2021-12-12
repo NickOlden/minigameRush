@@ -1,0 +1,116 @@
+.game {
+    width: 800px;
+    height: 450px;
+    background-image: url(../img/backgrounds/background1.png);
+    margin: auto;
+    animation: forestMove 1s infinite linear;
+}
+
+#hero {
+    width: 80px;
+    height: 100px;
+    position: relative;
+    top: 350px;
+}
+
+#let {
+    width: 75px;
+    height: 80px;
+    background-image: url(../img/lets/let1.png);
+    position: relative;
+    top: 280px;
+    left: 720px;
+}
+
+.letMove {
+    animation: letMove 1s infinite linear;
+}
+
+.run {
+    animation: run 500ms infinite linear;
+}
+
+.jump {
+    animation: jump 500ms linear;
+}
+
+.explosion {
+    animation: explosion 700ms linear;
+}
+
+@keyframes run {
+    0% {
+        background-image: url(../img/heroMageKnight/run/run1.png);
+    }
+    20% {
+        background-image: url(../img/heroMageKnight/run/run2.png);
+    }
+    40% {
+        background-image: url(../img/heroMageKnight/run/run3.png);
+    }
+    60% {
+        background-image: url(../img/heroMageKnight/run/run4.png);
+    }
+    80% {
+        background-image: url(../img/heroMageKnight/run/run5.png);
+    }
+    100% {
+        background-image: url(../img/heroMageKnight/run/run6.png);
+    }
+}
+
+@keyframes jump {
+    0% {
+        background-image: url(../img/heroMageKnight/run/run2.png);
+        top: 350px;
+    }
+    30% {
+        background-image: url(../img/heroMageKnight/jump/jumpUP.png);
+        top: 280px;
+    }
+    50% {
+        background-image: url(../img/heroMageKnight/jump/jumpUP.png);
+        top: 210px;
+    }
+    80% {
+        background-image: url(../img/heroMageKnight/jump/jumpDOWN.png);
+        top: 280px;
+    }
+    100% {
+        background-image: url(../img/heroMageKnight/run/run2.png);
+        top: 350px;
+    }
+}
+
+@keyframes letMove {
+    0% {
+        left: 780px;
+    }
+    100% {
+        left: -20px;
+    }
+}
+
+@keyframes explosion {
+    0% {
+        background-image: url(../img/explosions/herodeath/explosion1.png);
+    }
+    10% {
+        background-image: url(../img/explosions/herodeath/explosion2.png);
+    }
+    20% {
+        background-image: url(../img/explosions/herodeath/explosion3.png);
+    }
+    40% {
+        background-image: url(../img/explosions/herodeath/explosion4.png);
+    }
+    60% {
+        background-image: url(../img/explosions/herodeath/explosion5.png);
+    }
+    80% {
+        background-image: url(../img/explosions/herodeath/explosion6.png);
+    }
+    100% {
+        background-image: url(../img/explosions/herodeath/explosion7.png);
+    }
+}
