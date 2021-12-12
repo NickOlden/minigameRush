@@ -1,11 +1,18 @@
 const hero = document.getElementById("hero");
 const prep = document.getElementById("let");
 
-document.addEventListener("keydown", function (event) {
+document.addEventListener("click", function (event) {
   heroToggleState();
 });
 
 function heroToggleState() {
+  if (prep.classList !== "letMove") {
+    prep.classList.add("letMove");
+  }
+  if (hero.classList !== "jump" && hero.classList !== "run") {
+    hero.classList.remove("explosion");
+    hero.classList.add("run");
+  }
   if (hero.classList !== "jump") {
     hero.classList.remove("run");
     hero.classList.add("jump");
