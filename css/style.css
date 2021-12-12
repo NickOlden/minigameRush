@@ -3,7 +3,6 @@
     height: 450px;
     background-image: url(../img/backgrounds/background1.png);
     margin: auto;
-    animation: forestMove 1s infinite linear;
 }
 
 #hero {
